@@ -1,0 +1,186 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+main .hrmain, main .hrpagesmain {
+  border-color: #ffffff; }
+
+main h2, .enunciado {
+  align-items: center; }
+
+h4, .form-control, .form-check-input, .form-check-label, .btn {
+  margin-left: 10px; }
+
+/*estilos de home*/
+body {
+  background-color: #ffffff;
+  font-family: 'ubuntu', sans-serif; }
+
+header {
+  background-color: #1c2631;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 5px solid #746f6f; }
+  header nav .nav-link {
+    color: #ffffff; }
+  header button .navbar-togler {
+    border-radius: 3px;
+    border: 3px solid #f49336; }
+  header h1 {
+    text-align: left;
+    color: #f49336;
+    padding-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 25px;
+    font-size: 50px;
+    font-family: 'ubuntu', sans-serif; }
+    header h1 .h1header {
+      color: #f49336;
+      text-decoration: none; }
+  header a {
+    color: #f49336;
+    text-decoration: none; }
+  header a:hover {
+    color: #f49336 !important;
+    border-bottom: 2px solid #ffffff; }
+  header a .ahome {
+    text-align: left;
+    color: #f49336;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 50px;
+    font-family: 'ubuntu', sans-serif; }
+  header nav ul li {
+    color: #ebdcca;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 5px;
+    list-style: none;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-family: 'ubuntu', sans-serif; }
+  header .hrheader {
+    height: 10px;
+    background-color: #f49336;
+    border-color: #f49336;
+    margin-top: 20px; }
+
+main {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat 5, 1fr;
+  gap: 1rem;
+  margin: 1rem 3rem 3rem 3rem; }
+  main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  main h2 {
+    color: #1c2631;
+    font-family: 'ubuntu', sans-serif;
+    display: grid; }
+  main .hrmain {
+    height: 10px;
+    background-color: #ffffff;
+    margin-top: 50px; }
+  main .hrpagesmain {
+    height: 8px;
+    background-color: #ffffff;
+    margin-top: 200px; }
+
+footer {
+  background-color: #1c2631; }
+  footer div {
+    background-color: #1c2631;
+    border-top: 3px solid #746f6f;
+    padding-top: 8px; }
+    footer div ul {
+      color: #ffffff;
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      justify-content: center; }
+      footer div ul .botonArrepentimiento {
+        border: 2px solido #746f6f;
+        background-color: #f49336;
+        color: #1c2631;
+        border-radius: 8px;
+        padding: 3px 3px 3px 3px; }
+      footer div ul .botonArrepentimiento:hover {
+        color: #ffffff;
+        background-color: #746f6f; }
+
+main .hrmain, main .hrpagesmain {
+  border-color: #ffffff; }
+
+main h2, .enunciado {
+  align-items: center; }
+
+h4, .form-control, .form-check-input, .form-check-label, .btn {
+  margin-left: 10px; }
+
+.apages {
+  text-align: left;
+  color: #f49336;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  font-size: 50px;
+  font-family: 'ubuntu', sans-serif; }
+
+.enunciado {
+  color: #1c2631;
+  font-family: 'ubuntu',sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center; }
+
+.contenedorcomp {
+  display: flex;
+  flex-direction: column; }
+
+h4 {
+  color: #1c2631;
+  font-family: 'ubuntu', sans-serif;
+  margin-top: 60px;
+  border-top: 3px solid #f49336; }
+
+p {
+  color: #1c2631; }
+
+.contenedorlogin {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.form-label {
+  font-family: 'ubuntu', sans-serif;
+  margin-top: 30px;
+  margin-left: 30px; }
+
+/*mq tablet*/
+@media screen and (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%); }
+  .img-uno, .img-dos {
+    grid-row: span 1; }
+  .img-seis, .img-doce {
+    grid-column: span 1; } }
+
+/*mq para desktop*/
+@media screen and (min-width: 1024px) {
+  main .img-uno, .img-dos, .img.ocho, .img-nueve {
+    display: block; }
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40% 40% 40%; }
+  .img-tres, .img-cuatro, .img-diez {
+    grid-row: span 2; }
+  .img-cinco, .img-seis, .img-once {
+    grid-column: span 1; }
+  .img-siete, .img-doce {
+    grid-column: span 1; } }

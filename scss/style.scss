@@ -1,0 +1,51 @@
+
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//import
+@import "../scss/html/home";
+@import "../scss/html/comprar";
+@import "../scss/html/registro";
+
+
+/*mq tablet*/
+@media screen and (min-width:600px){
+    main{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,50%)
+    }
+    .img-uno, .img-dos{
+        grid-row: span 1;
+    }
+    .img-seis, .img-doce{
+        grid-column: span 1;
+    }
+}
+
+/*mq para desktop*/
+@media screen and (min-width:1024px){
+    main .img-uno, .img-dos, .img.ocho, .img-nueve{
+        display: block;
+    }
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 40% 40% 40%;
+    }
+    .img-tres, .img-cuatro, .img-diez{
+        grid-row: span 2;
+    }
+    .img-cinco, .img-seis, .img-once{
+        grid-column: span 1;
+    }
+    .img-siete, .img-doce{
+        grid-column: span 1;
+    }
+}
+
+

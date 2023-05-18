@@ -1,0 +1,160 @@
+@import "../utilities/variables";
+@import "../utilities/mixin";
+@import "../utilities/extend";
+
+// nesting
+/*estilos de home*/
+body {
+    background-color: #ffffff;
+    font-family: 'ubuntu', sans-serif;
+
+}
+
+header {
+    background-color: $color-secundario;
+    @include flex;
+    border-bottom: 5px solid $color-terciario;
+
+    nav {
+
+        .nav-link {
+            color: #ffffff;
+        }
+    }
+
+    button {
+            .navbar-togler {
+                border-radius: 3px;
+                border: 3px solid $color-principal;
+            }
+        
+    }
+
+
+h1 {
+    text-align: left;
+    color: $color-principal;
+    @include textos(20px, 20px);
+    padding-bottom: 25px;
+    font-size: 50px;
+    font-family: 'ubuntu', sans-serif;
+
+    .h1header {
+        color: $color-principal;
+        text-decoration: none;
+    }
+}
+
+a {
+    color: $color-principal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color-principal !important;
+    border-bottom: 2px solid #ffffff;
+}
+
+a .ahome {
+    text-align: left;
+    color: $color-principal;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 50px;
+    font-family: 'ubuntu', sans-serif;
+
+}
+
+
+nav {
+    ul {
+        li {
+            color: rgb(235, 220, 202);
+            text-decoration: none;
+            margin-left: 40px;
+            margin-right: 5px;
+            list-style: none;
+            display: inline-block;
+            padding-bottom: 10px;
+            font-family: 'ubuntu', sans-serif;
+        }
+    }
+}
+
+.hrheader {
+    height: 10px;
+    background-color: $color-principal;
+    border-color: $color-principal;
+    margin-top: 20px;
+}
+
+
+}
+
+main {
+    height: 70vh;
+    @include grid;
+    gap: 1rem;
+    margin: 1rem 3rem 3rem 3rem;
+
+    div {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    h2 {
+        color: $color-secundario;
+        font-family: 'ubuntu', sans-serif;
+        display: grid;
+        @extend %alignitems;
+    }
+
+    .hrmain {
+        height: 10px;
+        background-color: #ffffff;
+        @extend %border;
+        margin-top: 50px;
+    }
+
+    .hrpagesmain {
+        height: 8px;
+        background-color: #ffffff;
+        @extend %border;
+        margin-top: 200px;
+    }
+}
+
+footer {
+    background-color: $color-secundario;
+
+    div {
+        background-color: $color-secundario;
+        border-top: 3px solid $color-terciario;
+        padding-top: 8px;
+
+        ul {
+            color: #ffffff;
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+
+            .botonArrepentimiento {
+                border: 2px solido $color-terciario;
+                background-color: $color-principal;
+                color: $color-secundario;
+                border-radius: 8px;
+                padding: 3px 3px 3px 3px;
+            }
+
+            .botonArrepentimiento:hover {
+                color: #ffffff;
+                background-color: $color-terciario;
+            }
+        }
+    }
+
+}

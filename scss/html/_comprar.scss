@@ -1,0 +1,38 @@
+@import "../utilities/variables";
+@import "../utilities/extend";
+
+.apages{
+    text-align: left;
+    color: $color-principal;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 50px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.enunciado{
+    color: $color-secundario;
+    font-family: 'ubuntu',sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    @extend %alignitems;
+    text-align: center;
+}
+
+.contenedorcomp{
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    color: $color-secundario;
+    font-family: 'ubuntu', sans-serif;
+    margin-top: 60px;
+    @extend %marginleft;
+    border-top: 3px solid $color-principal;
+}
+
+p{
+    color: $color-secundario;
+}
